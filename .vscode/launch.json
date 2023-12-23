@@ -11,9 +11,12 @@
             "program":"${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
                 "--inspect-brk",
-                "${workspaceFolder}/test/queue.test.js"
+                "${workspaceFolder}/test/binary-search-tree.test.js"
             ],
-            "internalConsoleOptions": "openOnSessionStart"
-        },
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
     ]
 }
